@@ -27,6 +27,9 @@ router.get("/", (req, res) => {
     .then(data => {
       res.send(data);
     })
+    .catch(err => {
+      res.send(err)
+    })
 });
 
 router.get('/mymaps', isLoggedIn, (req, res) => {

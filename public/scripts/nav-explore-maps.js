@@ -2,6 +2,7 @@ const showExploreMaps = () => {
   $("#map-info-area").empty();
   $.get("/api/maps")
     .then(maps => {
+      console.log(maps);
       $("#map-info-area").append("<h1>Explore Maps</h1>");
       for (const map of maps) {
         let ratingStr = '';
