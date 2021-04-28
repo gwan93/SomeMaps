@@ -3,6 +3,8 @@
 SomeMaps is a full stack web application built with Node, Express, and PostgresSQL, using the Leaflet api and plugins. It allows users to create a map and save associated pins to it. Users can view maps saved by others. They can also add images, descriptions and titles to their own pins.
 
 This project was completed by [Eric M](https://github.com/ermurray), [Gio W](https://github.com/gwan93), & [Nolan E](https://github.com/Nolan-E) for the midterm project at Lighthouse Labs.
+
+[Hosted on Heroku](https://somemaps-gw.herokuapp.com/) - Please wait up to 30 seconds to allow for Heroku's servers to wake up after clicking the link.
 ****
 ## Features
 
@@ -60,7 +62,6 @@ This project was completed by [Eric M](https://github.com/ermurray), [Gio W](htt
 
 ## Future Development
 
-- Hosting (ie. on Heroku)
 - Flash user feedback messages instead of client alert messages
 - A share button for users to share their favorite maps
 - Allow users to add/edit pins on maps that are made by other users
@@ -79,6 +80,7 @@ This project was completed by [Eric M](https://github.com/ermurray), [Gio W](htt
 - Users are not able to edit their map's default photo
 - Users can add the same map multiple times to their favorites
 - Not able to delete a pin from a map
+- Adding a map to favorites will add it multiple times
 ****
 
 ## Dependencies

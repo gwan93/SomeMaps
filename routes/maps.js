@@ -23,7 +23,6 @@ const {deleteMyFav} = require('../db/queries/fav-maps-queries');
 const {isLoggedIn} = require('../public/scripts/middleware');
 
 router.get("/", (req, res) => {
-  // res.send('hello world');
   getAllMapsAnon()
     .then(data => {
       res.send(data);
