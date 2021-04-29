@@ -80,7 +80,7 @@ This project was completed by [Eric M](https://github.com/ermurray), [Gio W](htt
 - Users are not able to edit their map's default photo
 - Users can add the same map multiple times to their favorites
 - Not able to delete a pin from a map
-- Adding a map to favorites will add it multiple times
+
 ****
 
 ## Dependencies

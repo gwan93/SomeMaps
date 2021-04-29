@@ -6,7 +6,7 @@ const showLoginForm = () => {
       <form id="form-login" action="">
         <div class="form-group mb-2 form-inline">
           <label for="email"></label>
-          <input class="form-control" type="email" name="email" placeholder="Email" value="kira@knight.com">
+          <input class="form-control" type="email" name="email" placeholder="Email" value="Visitor@SomeMaps.com">
         </div>
         <div class="form-group mb-2 form-inline">
           <label for="password"></label>
