@@ -4,7 +4,7 @@ const db = require('../../server');
 const getAllFavMaps = (userID) => {
   return db.query(`
     SELECT DISTINCT fav_maps.map_id AS map_id, maps.name AS map_name, TO_CHAR(maps.date_created::date, 'Mon dd, yyyy') AS map_created,
-    users.name AS created_by, fav_maps.rating, fav_maps.review, MIN(pins.image_url) AS img_url
+    users.name AS created_by, fav_maps.rating, fav_maps.review
     FROM fav_maps
     JOIN maps ON fav_maps.map_id = maps.id
     LEFT JOIN pins ON pins.map_id = maps.id

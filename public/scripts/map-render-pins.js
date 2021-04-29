@@ -30,7 +30,7 @@ $(document).ready(function() {
           } else {
             ratingStr = `No rating`;
           }
-          console.log('######LOGGING######',pin);
+          // console.log('######LOGGING######',pin);
           marker = new L.Marker([pin.pin_lat, pin.pin_lng]).bindPopup(
             `<div class="card border-primary mb-2 pin-pop">
             <img src=${pin.img_url} class="card-img-top">

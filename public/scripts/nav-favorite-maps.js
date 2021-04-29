@@ -5,6 +5,7 @@ const showFavoriteMaps = function() {
       console.log('Retrieved data is', maps);
       $("#map-info-area").append("<h1>Favorite Maps</h1>");
       for (const map of maps) {
+        console.log('map', map)
         let ratingStr = '';
         if (map.rating) {
           ratingStr = `Rating: ${map.rating}`;
@@ -14,7 +15,7 @@ const showFavoriteMaps = function() {
         const createMapCard = `
         <div class="card map-card mb-2 p-1" id=${map.map_id}>
         <div class="imgContainer card-img-top">
-        <img id="cardimg" src=${map.img_url} class= "mx-auto">
+        <img id="cardimg" src="https://source.unsplash.com/1600x900/?nature,water" class= "mx-auto">
         </div>
           <div class="card-header p-1">Map by: ${map.created_by}</div>
           <div class="card-body text-primary">

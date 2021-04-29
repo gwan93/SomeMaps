@@ -51,6 +51,7 @@ $(document).ready(function() {
   $(document).on("submit", ".add-to-favorites", function(event) {
     event.preventDefault();
     const mapId = Number($(this).serializeArray()[0].value);
+    console.log('mapId', mapId);
     $.post("/api/maps/addtofavorites", {mapId})
       .then((data) => {
         console.log("Added to favorites!");
